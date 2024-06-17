@@ -25,7 +25,7 @@ Jogo do Felpudo é um jogo de aventura onde o jogador controla Felpudo, um perso
 
 1. **Movimentação:** Use as teclas de direção do teclado para mover Felpudo.
 2. **Interação:** Use a tecla `X` para interagir com a personagem Fofura.
-3.**Combate:** Utilize as peninhas coletadas como munição contra os lesmos, use a tecla `Espaço` para atirar peninhas.
+3. **Combate:** Utilize as peninhas coletadas como munição contra os lesmos, use a tecla `Espaço` para atirar peninhas.
 
 ## Instruções de Instalação
 
