@@ -36,7 +36,8 @@ class CenaGame extends Scene {
     enemies = new ArrayList<Enemy>();
     explosoes = new ArrayList<Explosao>();
     mensagens = new ArrayList<MessageBox>();
-
+   
+  
     for (int i=0; i<gridPontos.length; i++) {
       Actor actor;
       switch(itensCena[i]) {
@@ -236,22 +237,34 @@ class CenaGame extends Scene {
     switch(escolha) { 
     case 1:
       player.direcaoX=0; 
-      player.direcaoY=-1; 
+      player.direcaoY=-1;
+      playerm.rewind();
+      playerm.play();
       break; 
     case 2:
       player.direcaoX=0; 
-      player.direcaoY=1; 
+      player.direcaoY=1;
+      playerx.rewind();
+      playerx.play();
       break; 
     case 3:
       player.direcaoX=-1; 
-      player.direcaoY=0; 
+      player.direcaoY=0;
+      playery.rewind();
+      playery.play();
       break; 
     case 4:
       player.direcaoX=1; 
-      player.direcaoY=0; 
+      player.direcaoY=0;
+      playerx.rewind();
+      playerx.play();
       break;
     case 5: 
       atira();
+      playerw.rewind();
+      playerw.play();
+      delay(100);
+      playerw.pause();
       break;
     }
     if ((player.direcaoX!=0)||(player.direcaoY!=0)) {

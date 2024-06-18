@@ -1,3 +1,10 @@
+import ddf.minim.*;
+AudioPlayer playerm;
+AudioPlayer playery;
+AudioPlayer playerx;
+AudioPlayer playerw;
+Minim minim;
+
 int[] cores = {#ab9758, #d00b1c, #A50303, #EAB00E, #ECFF27, #86C13B, #31A4CB, #B532F7, #E34E8C, #606060, #FEFEFE, #428B18};
 float[][] gridPontos;
 boolean invencivel=false;
@@ -59,6 +66,15 @@ void setup() {
   carregaJson();
   gridPontos = new float[int(itens)][2];
   desenhaGrid(false, false, false, false, false);
+  minim = new Minim(this);
+  playerm = minim.loadFile("amostradinho.mp3");
+  playery = minim.loadFile("vou-nada.mp3");
+  playerx = minim.loadFile("eugosto.mp3");
+  playerw = minim.loadFile("rojao-super-estourado.mp3");
+
+  
+
+
 
   cenas = new ArrayList<Scene>();
   cenas.add(new Scene(cores[0], false));
